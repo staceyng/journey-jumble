@@ -1,13 +1,14 @@
-import React from 'react';
-import './App.css';
-import TripOrganizer from './TripOrganizer';
+import { ChakraProvider } from '@chakra-ui/react';
+import Home from "./pages/home"
 
-const App: React.FC = () => {
+function App() {
   return (
-    <div className="App">
-      <h1>Journey Jumble!</h1>
-      <TripOrganizer />
-    </div>
+    <ChakraProvider>
+      <div>
+        Journey Jumble
+        <Home/>
+      </div>
+    </ChakraProvider>
   );
 }
 
